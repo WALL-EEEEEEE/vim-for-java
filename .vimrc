@@ -5,11 +5,13 @@
 " nocompatible has to be the first of all ( use the real vimpower )
 set nocompatible
 
+set runtimepath+=C:/Users/JohansRes/vim-for-java/vimfiles
+
+
 "specify the font-size and font-style
 set guifont=monaco:h10
 
 
-let &rtp = substitute(&rtp,'vimfiles','vim-java','g')
 
 "specify the layout of winmanager
 
@@ -73,7 +75,7 @@ execute pathogen#helptags()
 syntax on
 
 " set the colorsheme
-colorscheme  monokai
+colorscheme   solarized
 set background=dark
 
 " backup rules

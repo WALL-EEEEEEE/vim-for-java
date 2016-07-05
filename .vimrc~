@@ -8,8 +8,7 @@ set nocompatible
 "specify the font-size and font-style
 set guifont=monaco:h10
 
-
-let &rtp = substitute(&rtp,'vimfiles','vim-java','g')
+let &rtp+=C:/User/JohansRes/vim-for-java/
 
 "specify the layout of winmanager
 
@@ -309,3 +308,6 @@ autocmd Filetype java set omnifunc=javacomplete#Complete
 autocmd Filetype java map <leader>b :call javacomplete#GoToDefinition()<CR>
 " no bell
 set vb t_vb=
+
+let g:JavaComplete_JavaCompiler="C:\Program Files\Java\jdk1.8.0_91\bin\javac"
+
