@@ -7,6 +7,10 @@ set nocompatible
 
 set runtimepath+=C:/Users/JohansRes/vim-for-java/vimfiles
 
+" enable pathogen
+execute pathogen#infect()
+" build helptags
+execute pathogen#helptags()
 
 "specify the font-size and font-style
 set guifont=monaco:h10
@@ -67,10 +71,7 @@ let g:AuthorEmail="zhangjiayin99@gmail.com"
 " DEFAULT WORKSPACE AREA
 let g:Workspace="D:/WorkPlace"
 
-" enable pathogen
-execute pathogen#infect()
-" build helptags
-execute pathogen#helptags()
+
 
 syntax on
 
